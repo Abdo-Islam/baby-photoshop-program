@@ -1,16 +1,20 @@
-// File: CS112_A3_Part1_S21_20230225_20230374_20230328.cpp
-//this is a program for some filters that changes the photo as wanted   
+// File: CS112_A3_Part2B_S21_20230225_20230374_20230328.cpp
+// this is a program for some filters that changes the photo as wanted   
 // Author: Abdullah Islam Fathy Ibrahim , S21 , 20230225
 //         Mahmoud Ali Anwar Mohammed , S21 , 20230374
 //         Mohamed Gamal Abd-Elmalek Abd-Elrehem , S21 , 20230328 
 // Emails: Abdullah : abdoislam2050@gmail.com
 //         Mahmoud : mahmoud.ali.ashor@gmail.com
 //         Mohamed : mg4803558@gmail.com
-//      Abdullah : 20230225 , did the main menu + Filter 1: Grayscale Conversion + Filter 7: Darken and Lighten
-//                    
-//      Mahmoud : 20230374 , did Filter 3 : Invert image, Filter 6 : Rotate Image, filter 9 : Add frame
-//                    
-//      Mohamed : 20230328 , 
+//      Abdullah : 20230225 , did the main menu , Filter 1: Grayscale Conversion  
+//                     Filter 4: merge , Filter 7: Darken and Lighten
+//                     Filter 10: detect edges , Filter 14: oil painting 
+//      Mahmoud : 20230374 , did Filter 3: Invert image , Filter 6: Rotate Image , filter 9: Add frame
+//                     Filter 12: blur , Filter 15: TV effect     
+//      Mohamed : 20230328 , did Filter 2: black and white , Filter 5: flip image , Filter 8: crop
+//                      Filter 11: resize , Filter 13: sunlight filter
+// system diagram link : https://drive.google.com/file/d/1I5jsTHYV1Q4rUDK04SPTxWwva9r-6I6r/view?usp=drive_link
+// the progrm repo on githup : https://github.com/Abdo-Islam/baby-photoshop-program
 
 #include <iostream>
 #include <cmath>
@@ -117,7 +121,7 @@ int main()
       {
         try 
         {
-          photo2.loadNewImage(name); 
+          photo2.loadNewImage(name2); 
           break;
         } catch (invalid_argument) {
           cout << "please enter a valid name ot path : ";
